@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Inst</title>
+  <style>
+    body {
+        width: 400px;
+        height: 470px;
+    }
+  </style>
+</head>
+<body>
+<style>
+        button{
+          background-color: lightgray;
+        }
+        .tile {
+            width: 35px;
+            height: 50px;
+            font-size: 19px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .tileSh1 {
+            margin-left: 20px;
+        }
+        .tileSh2 {
+            margin-left: 45px;
+        }
+        .tileSh {
+            display: flex;
+            flex-direction: row;
+        }
+        .tileSh3 {
+            margin-left: 40px;
+        }
+        .changeInst {
+            width: 100px;
+            height: 50px;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        .tileSh4 {
+            margin-left: 20px;
+        }
+        .tileSh5 {
+            margin-left: 45px;
+        }
+        .changeKb {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 10px;
+        }
+</style>
+
+
+<h1>Instrument</h1>
+
+<div class="tileSh">
+<div class="tileSh1">
+<button id="playButtonDoSh" class="tile">C#</button>
+<button id="playButtonReSh" class="tile">D#</button>
+</div>
+<div class="tileSh2">
+<button id="playButtonFaSh" class="tile">F#</button>
+<button id="playButtonSolSh" class="tile">G#</button>
+<button id="playButtonLaSh" class="tile">A#</button>
+</div>
+<div class="tileSh3">
+<button id="playButtonHDoSh" class="tile">C#</button>
+<button id="playButtonHReSh" class="tile">D#</button>
+</div>
+</div>
+
+<button id="playButtonDo" class="tile">C</button>
+<button id="playButtonRe" class="tile">D</button>
+<button id="playButtonMi" class="tile">E</button>
+<button id="playButtonFa" class="tile">F</button>
+<button id="playButtonSol" class="tile">G</button>
+<button id="playButtonLa" class="tile">A</button>
+<button id="playButtonSi" class="tile">B</button>
+<button id="playButtonHdo" class="tile">C</button>
+<button id="playButtonHre" class="tile">D</button>
+<button id="playButtonHmi" class="tile">E</button>
+
+<br>
+<br>
+
+<div class="tileSh">
+<div class="tileSh4">
+<button id="playButtonLDoSh" class="tile">C#</button>
+<button id="playButtonLReSh" class="tile">D#</button>
+</div>
+<div class="tileSh5">
+<button id="playButtonLFaSh" class="tile">F#</button>
+<button id="playButtonLSolSh" class="tile">G#</button>
+<button id="playButtonLLaSh" class="tile">A#</button>
+</div>
+</div>
+
+<button id="playButtonLDo" class="tile">C</button>
+<button id="playButtonLRe" class="tile">D</button>
+<button id="playButtonLMi" class="tile">E</button>
+<button id="playButtonLFa" class="tile">F</button>
+<button id="playButtonLSol" class="tile">G</button>
+<button id="playButtonLLa" class="tile">A</button>
+<button id="playButtonLSi" class="tile">B</button>
+
+
+<br>
+<p>Volume</p>
+<input type="range" id="volume" max="100" min="0" value="50">
+<br>
+<p>Instrument:</p>
+<button class="chageInst" id="sine">Sine</button>
+<button class="chageInst" id="square">Square</button>
+<button class="chageInst" id="triangle">Triangle</button>
+<button class="chageInst" id="sawtooth">Sawtooth</button>
+
+<div class="changeKb">
+<p>See Keyboard:</p>
+<button id="showKeyboard">Change</button>
+</div>
+
+
+
+<script src="piano.js"></script>
+
+</body>
+</html>
